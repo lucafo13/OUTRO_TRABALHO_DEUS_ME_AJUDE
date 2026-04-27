@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+
+}
+
+:root {
+  --font: "Montserrat", sans-serif;
+  --font-tittle: 30px;
+  --font-hyper-title: 60px;
+  --font-mega-title: 90px
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.menu a {
+  text-decoration: none;
+  padding: 20px 40px;
+  color: white;
+  background-color: rgba(0, 0, 255, 1);
+  transition: 0.5s all;
+  margin: 10px;
+  border-radius: 10px;
+  /* font-family: mont; */
+}
+
+.menu a::after {
+  position: relative;
+  width: 0%;
+  bottom: 1px;
+  height: 2px;
+  background: white;
+  transition: 0.5s;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+aside {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-right: 5px solid red;
+  border-left: 2px solid blue;
+  background: #fff;
+  width: 20%;
+  z-index: 9;
+
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 180, 01);
+  color: #fff;
+}
+
+.apresentation {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+}
+
+.cont-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #fff;
+  border: 1px solid blue;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-height: 100px;
+  height: 100%;
+  z-index: 999;
+}
+
+.cont-rodape {
+  display: flex;
+  justify-content: center;
+
+}
+
+header {
+  border-top: 5px solid red;
+  border-bottom: 2px solid blue;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  z-index: 9999;
+  background-color: #fff;
+
+
+}
+
+.art-right {
+  display: inline-flex;
+
+}
+
+.art-right img {
+  width: 150px;
+  height: 100px;
+  right: 0;
+  position: relative;
+
+}
+
+main h1 {
+  font-weight: bolder;
+}
+
+.prcpal {
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.logotype {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+aside a:hover {
+  transform: translateY(-5px) scale(1.02);
+  background-color: rgba(0, 0, 180, 01);
+  box-shadow: 0 20px 20px rgba(15, 15, 15, 0.4);
+
+}
+
+body {
+  background-color: rgba(0, 0, 180, 01);
+}
+
+header h1 {
+  font-size: 50px;
+}

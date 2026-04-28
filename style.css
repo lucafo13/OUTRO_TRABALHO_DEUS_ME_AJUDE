@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font);
+  cursor: url(img/cursor.png), auto;
 }
 
 :root {
@@ -10,8 +11,11 @@
   --font-tittle: 30px;
   --font-hyper-title: 60px;
   --font-mega-title: 90px;
+  --cuselect: url(img/select.png), auto;
 }
-
+.bradius {
+  border-radius: 2px 50px 2px 50px;
+}
 html {
   scroll-behavior: smooth;
   height: 100%;
@@ -63,6 +67,7 @@ main {
 .apresentation {
   display: flex;
   flex: 1;
+  flex-wrap: wrap;
 }
 
 .cont-menu {
@@ -73,17 +78,18 @@ main {
 footer {
   background-color: #fff;
   border: 1px solid blue;
-  position: absolute;
+
   bottom: 0;
   width: 100%;
   max-height: 100px;
   height: 100%;
-  z-index: 999;
+  /* z-index: 999; */
 }
 
 .cont-rodape {
-  display: flex;
+  display: grid;
   justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 header {
@@ -106,7 +112,7 @@ header {
 }
 .cont-cabecalho {
   display: inline-flex;
-
+  align-items: center;
   gap: 50px;
 }
 
@@ -124,7 +130,6 @@ main h1 {
   margin: 0 auto;
   margin-top: 2%;
   height: 100px;
-  margin: 100px;
 }
 
 aside a:hover {
@@ -152,6 +157,113 @@ header h1 {
 }
 .pesquisa {
   position: relative;
+  top: -20%;
+}
+input:focus {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 20px rgba(15, 15, 15, 0.4);
+}
+input {
+  border-color: rgba(15, 15, 15, 0.4);
+  transition: 0.5s all;
+}
+.pt2,
+.contente {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  width: 95%;
+  /* flex-wrap: wrap; */
+}
+.titulo {
+  width: 100%;
+  height: auto;
 
   position: relative;
+  justify-content: center;
+  display: flex;
+}
+.pt2 {
+  display: grid;
+}
+.conter-minicard {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+.minicard {
+  width: 80px;
+  height: 80px;
+
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.minicard img {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  border-radius: 15px 5px 15px 5px;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.minicard label {
+  transition: 0.5s;
+}
+.minicard:hover label {
+  transform: scale(1.02) translateY(-4px);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.minicard img:hover,
+.minicard:hover {
+  transform: translateY(-5px) scale(0.95);
+  /* sombra */
+  cursor: url(img/select.png), auto;
+  box-shadow: 0 15px 15px rgba(15, 15, 15, 0.4);
+}
+.footer-cont {
+  border: 1px solid rgba(15, 15, 15, 0.4);
+  display: grid;
+  transition: 0.5s;
+  text-align: center;
+  margin: 20px;
+  margin-left: 7%;
+  width: 80%;
+  border-radius: 10px;
+}
+.footer-cont:hover {
+  transform: translateY(-5px) scale(1.02);
+  cursor: pointer;
+  box-shadow: 0 20px 20px rgba(15, 15, 15, 0.4);
+}
+.footer-cont h2 {
+  font-weight: bold;
+  color: blue;
+}
+.timage {
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+}
+.bcards {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 10%;
+  gap: 150px;
+}
+.titbc {
+  cursor: url(img/select.png), auto;
+  position: relative;
+  width: 405px;
+  justify-content: center;
+  display: flex;
+  height: 40px;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  border-radius: 2px 50px 2px 50px;
+  background-color: red;
+  color: white;
 }

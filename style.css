@@ -267,3 +267,216 @@ input {
   background-color: red;
   color: white;
 }
+.artso{
+  display: grid;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 50px 5px 50px 5px;
+  border: 2px solid white;
+  text-align: center;
+  padding: 20px;
+  width: 90%;
+  transition: 0.5s;
+
+}
+.titso{
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  font-size: var(--font-tittle);
+}
+.pso{
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+.artso:hover{
+  border: 4px solid red;
+  font-weight: bolder;
+}
+.logotop{
+  border-radius: 2px 50px 2px 50px;
+}
+
+.titbc {
+  cursor: url(img/select.png), auto;
+  position: relative;
+  width: 405px;
+  justify-content: center;
+  display: flex;
+  height: 40px;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  border-radius: 2px 50px 2px 50px;
+  background-color: red;
+  color: white;
+}
+.bigp{
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5%;
+  justify-content: center;
+  gap: 50px;
+  margin-left: 15%;
+
+}
+.bigp img{
+  border-radius: 15px 5px 15px 5px;
+  width: 400px;
+  /* height: ; */
+  transition: 0.5s;
+  cursor: url(img/select.png), auto;
+
+
+}
+.bigp img:hover{
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 20px 20px rgba(15, 15, 15, 0.4);
+}
+.conta{
+  padding: 10px 10px;
+  background-color: rgba(15, 15, 15, 0.4);
+  border-radius: 15px 2px 15px 2px;
+  transition: 0.5s;
+}
+.conta:hover{
+  transform: translateY(-5px);
+
+}
+.presentao{
+    cursor: url(img/select.png), auto;
+  position: relative;
+/* w */
+height: 100px;
+  justify-content: center;
+  display: flex;
+  /* height: 40px; */
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  /* border-radius: 2px 50px 2px 50px; */
+  /* background-color: red; */
+  /* color: white; */
+  /* border: 2px solid blue; */
+}
+.whitesec{
+    display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #fff;
+  width: 100%;
+  color: #fff;
+  margin-top: 10%;
+  align-items: center;
+  padding: 10px 10px;
+}
+.whitesec img:hover{
+  transform: scale(1.05);
+}
+.whitesec img{
+  transition: 0.5s;
+}
+.finalp{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin: 0 auto;
+  font-size: 50px;
+  color: rgba(0, 0, 180, 01);
+  background-color: #fff;
+  width: 100%;
+  text-transform: capitalize;
+  text-align: center;
+
+}
+.finalp .tf{
+  text-align: center;
+  display: flex;
+  text-align: center;
+  /* border: 2px solid white; */
+}
+.cards{
+  z-index: 1;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  gap: 30px;
+  
+}
+.branco{
+    background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  z-index:0 ;
+  border-bottom: 2px solid blue;
+
+}
+.cont-card{
+  background-color: #fff;
+  margin: 0 auto;
+  display: grid;
+  /* grid-template-columns: repeat(4, fr); */
+  color: blue;
+  text-align: center;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 40px 5px 40px 5px;
+    margin-top: 10%;
+  height: 100%;
+  max-height: 600px;
+    transition: 0.5s;
+}
+.cards a{
+  padding: 16px 16px;
+  background-color: blue;
+  color: white;
+  border-radius: 15px 5px 15px 5px;
+  text-decoration: none;
+  margin: 10px;
+  cursor: url(img/select.png), auto;
+  transition: 0.5s all;
+}
+.cards a:hover{
+  transform: scale(1.04) translateY(-5px);
+  box-shadow: 0 15px 15px rgba(15, 15, 15, 0.4);
+  border: 1px solid blue;
+  background-color: white;
+  color: blue;
+}
+.tf{
+  border-bottom:  2px solid blue;
+}
+.cards span{
+  color: gray;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+
+  position: relative;
+}
+.cont-card:hover{
+  transform: translateY(-5px);
+  border: 2px solid blue;
+}
+.cards img{
+  max-width: 225px;
+  width: 100%;
+  max-height: 225px;
+  height: 100%;
+  border-radius: 40px 5px 40px 5px;
+}
+.cont-rodape{
+  background: #fff;
+}
